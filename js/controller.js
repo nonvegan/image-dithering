@@ -23,7 +23,7 @@ window.onload = function() {
                 canvas1Context.drawImage(img, 0, 0);
                 renderNewScaledImage(scale)
                 label.innerHTML = ` ${Math.pow(scale+1,3)} Colors`
-                slider.addEventListener('change', () => {
+                slider.addEventListener('input', () => {
                     scale = parseInt(slider.value, 10)
                     renderNewScaledImage(scale)
                     label.innerHTML = `${Math.pow(scale+1,3)} Colors`
